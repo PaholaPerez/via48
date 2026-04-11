@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vía48 | Devocional | La Gracia</title>
+
+  <!-- Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="devocional.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="topbar">
+
+  <button onclick="goBack()" class="btn-back">← Devocionales</button>
+
+  <a href="../index.html" class="logo-center">
+    <img src="isolog.png" alt="Vía48" height="40">
+  </a>
+
+</header>
+
+<!-- HERO -->
+<section class="hero">
+
+  <div class="hero-container">
+
+    <!-- IZQUIERDA -->
+    <div class="hero-content">
+
+      <h1>
+        La Gracia <br>
+        <span>Como fundamento de vida</span>
+      </h1>
+
+      <!-- INTRO -->
+      <div class="intro">
+        <p>
+          La gracia es el eje central del mensaje bíblico y la manifestación suprema del amor de Dios hacia la humanidad. No se trata únicamente de un favor inmerecido, sino de la expresión de Dios obrando en el ser humano para redimirlo, transformarlo y sostenerlo. La gracia no es un concepto aislado, sino la revelación del solo Dios Jesucristo actuando plenamente en para salvar.
+        </p>
+
+        <p>
+          En estos devocionales diarios, se propone una reflexión progresiva sobre la gracia como doctrina viva: una gracia que alcanza, justifica, transforma, sostiene y perfecciona. Este devocional está estructurada en cinco momentos de meditación, permitiendo una comprensión profunda y práctica de cómo la gracia opera en la vida del creyente.
+        </p>
+
+        <p>
+          El propósito de este recorrido no es solo adquirir conocimiento, sino experimentar la gracia en la cotidianidad, entendiendo que no depende del esfuerzo humano, sino de la iniciativa divina. Así, cada devocional invita a una respuesta: fe, obediencia y una vida rendida a la obra continua de Dios.
+        </p>
+      </div>
+
+      <!-- PROGRESO -->
+      <div class="progress-container">
+
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+
+        <div class="steps">
+          <button class="step" data-day="1">1</button>
+          <button class="step" data-day="2">2</button>
+          <button class="step" data-day="3">3</button>
+          <button class="step" data-day="4">4</button>
+          <button class="step" data-day="5">5</button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- DERECHA -->
+    <aside class="author">
+
+      <div class="author-card">
+
+        <img src="../multimedia/team/claudia-Sot.png" alt="Claudia Soto">
+
+        <h3>Claudia Soto</h3>
+
+        <div class="tags">
+          <h5>
+          <span>Amiga de Dios | teóloga | psicóloga</span>
+          </h5>
+        </div>
+
+        <p>
+          La gracia es el eje central del mensaje bíblico y la manifestación suprema del amor de Dios hacia la humanidad.
+        </p>
+
+      </div>
+
+    </aside>
+
+  </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+
+  <div class="modal-content">
+
+    <!-- PROGRESO DE LECTURA -->
+    <div class="reading-progress">
+      <div id="reading-bar"></div>
+    </div>
+
+    <!-- CERRAR -->
+    <span class="close" onclick="closeModal()">×</span>
+
+    <!-- CONTENIDO DINÁMICO -->
+    <div id="modal-title"></div>
+    <div id="modal-body"></div>
+
+  </div>
+
+</div>
+
+<!-- SCRIPT -->
+<script src="la-gracia.js"></script>
+
+</body>
+</html>
