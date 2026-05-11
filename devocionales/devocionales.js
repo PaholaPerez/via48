@@ -1,26 +1,24 @@
-document.querySelectorAll('.slider-container').forEach(container => {
-  const track = container.querySelector('.slider-track');
-  const prev = container.querySelector('.prev');
-  const next = container.querySelector('.next');
+const sliders = document.querySelectorAll(".slider-wrapper");
 
-  let position = 0;
+sliders.forEach(slider => {
 
-  const cardWidth = track.querySelector('.dev-card').offsetWidth + 24;
-  const visibleWidth = container.offsetWidth;
-  const totalWidth = track.scrollWidth;
-  const maxScroll = totalWidth - visibleWidth;
+  const track = slider.querySelector(".slider-track");
 
-  next.addEventListener('click', () => {
-    position -= cardWidth;
-    if (Math.abs(position) > maxScroll) {
-      position = -maxScroll;
-    }
-    track.style.transform = `translateX(${position}px)`;
+  const next = slider.querySelector(".next");
+  const prev = slider.querySelector(".prev");
+
+  next.addEventListener("click", () => {
+    track.scrollBy({
+      left: 320,
+      behavior: "smooth"
+    });
   });
 
-  prev.addEventListener('click', () => {
-    position += cardWidth;
-    if (position > 0) position = 0;
-    track.style.transform = `translateX(${position}px)`;
+  prev.addEventListener("click", () => {
+    track.scrollBy({
+      left: -320,
+      behavior: "smooth"
+    });
   });
+
 });
