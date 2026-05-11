@@ -42,28 +42,51 @@
 </div>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
   <div class="container">
-    <img src="multimedia/Logos/2x/isolog.png"
-           alt="Devocional"
-           height="40"
-           class="me-2">
-    <a class="navbar-brand fw-bold" href="#">Vía48</a>
 
+    <a class="navbar-brand d-flex align-items-center fw-bold" href="../index.html">
+      <img src="../multimedia/Logos/2x/isolog.png"
+           alt="Vía48"
+           height="42"
+           class="me-2 logo-nav">
 
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="brand-text">Vía48</span>
+    </a>
+
+    <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="menu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="#">Somos</a></li>
-        <li class="nav-item"><a class="nav-link" href="devocionales/devocionales.html">Devocionales</a></li>
-        <li class="nav-item"><a class="nav-link" href="podcast.html">Podcast</a></li>
+
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+
+        <li class="nav-item">
+          <a class="nav-link active-link" href="#">Somos</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../Devocionales/devocionales.html">
+            Devocionales
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="devocionales/devocionales.html">
+            Podcast
+          </a>
+        </li>
+
       </ul>
+
     </div>
   </div>
 </nav>
+
 
 <!-- HERO CON VIDEO -->
 <header class="hero-video">
@@ -202,11 +225,10 @@
                class="highlight-img">
 
           <div class="highlight-content">
-            <h4>📖 Devocional de la Semana</h4>
-            <h4>LA GRACIA</h4>
+            <h4>Devocional de la Semana</h4>
             <p>La gracia es el eje central del mensaje bíblico y la manifestación suprema del amor de Dios hacia la humanidad.</p>
 
-            <a href="devocionales.html" class="btn btn-main">
+            <a href="devocionales/la-gracia.html" class="btn btn-main">
               Leer devocional
             </a>
           </div>
@@ -214,37 +236,62 @@
       </div>
 
       <!-- PODCAST -->
-<!-- PODCAST -->
+  <!-- PODCAST -->
 <div class="col-md-6" data-aos="flip-right">
+
   <div class="highlight-card alt">
 
     <!-- VIDEO YOUTUBE -->
     <div class="video-wrapper">
+
       <iframe
-        a
+        src="https://www.youtube.com/embed/YCmuZeAG0Wo"
         title="Podcast de la Semana"
         frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen>
       </iframe>
+
     </div>
 
+    <!-- CONTENIDO -->
     <div class="highlight-content">
-      <h4>🎧 Podcast de la Semana</h4>
+
+      <h4>Podcast de la Semana</h4>
+
       <p>
-        Un mensaje que edificará tu vida.  
+        Un mensaje que edificará tu vida.
         Míralo y escúchalo directamente desde nuestro canal de YouTube.
       </p>
 
-      <a href="https://www.youtube.com/watch?v=TU_ID_DE_VIDEO"
-         target="_blank"
-         class="btn btn-main">
-        Ver en YouTube
-      </a>
+      <div class="podcast-buttons">
+
+        <a href="https://youtu.be/YCmuZeAG0Wo?si=dfrvTDsnvAKAEjXD"
+           target="_blank"
+           class="btn btn-main">
+
+          Ver episodio
+
+        </a>
+
+        <a href="https://youtube.com/@via_480?si=OAqk-MaweyijHYib"
+           target="_blank"
+           class="btn btn-outline-light">
+
+          Canal YouTube
+
+        </a>
+
+      </div>
+
     </div>
 
   </div>
+
 </div>
+
+
+  </div>
 </section>
 
 <!-- FOOTER -->
