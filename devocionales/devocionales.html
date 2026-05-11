@@ -2,446 +2,354 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Devocionales | Vía48</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Vía48 | Devocionales</title>
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../style.css" rel="stylesheet">
-  <link href="style-devocionales.css" rel="stylesheet">
+
+  <!-- Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="style-devocionales.css">
 </head>
 
 <body>
 
-<!-- NAVBAR (MISMO) -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
   <div class="container">
 
-    <img src="../multimedia/Logos/2x/isolog.png"
-         alt="Devocional"
-         height="40"
-         class="me-2">
+    <a class="navbar-brand d-flex align-items-center fw-bold" href="../index.html">
+      <img src="../multimedia/Logos/2x/isolog.png"
+           alt="Vía48"
+           height="42"
+           class="me-2 logo-nav">
 
-    <a class="navbar-brand fw-bold" href="../index.html">Vía48</a>
+      <span class="brand-text">Vía48</span>
+    </a>
 
-    <button class="navbar-toggler" type="button"
+    <button class="navbar-toggler"
+            type="button"
             data-bs-toggle="collapse"
             data-bs-target="#menu">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="menu">
-      <ul class="navbar-nav ms-auto">
+
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+
         <li class="nav-item">
           <a class="nav-link" href="../index.html">Somos</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="devocionales.html">Devocionales</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../Podcast/podcast.html">Podcast</a>
-        </li>
-      </ul>
-    </div>
 
+        <li class="nav-item">
+          <a class="nav-link active-link" href="#">
+            Devocionales
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../podcast/podcast.html">
+            Podcast
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
   </div>
 </nav>
-<!-- HERO -->
-<header class="devocionales-hero">
+
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+
+  <div class="hero-overlay"></div>
+
   <div class="container hero-content">
 
-    <!-- LADO IZQUIERDO -->
     <div class="hero-text">
-      <h1>Devocionales</h1>
-      <p>Una biblioteca para tu crecimiento espiritual</p>
+
+      <span class="hero-tag">
+        Biblioteca espiritual
+      </span>
+
+      <h1>
+        Devocionales <br>
+        <span>para cada etapa de tu vida</span>
+      </h1>
+
+      <p>
+        Reflexiones profundas y prácticas para fortalecer tu fe,
+        renovar tu mente y caminar diariamente con Dios.
+      </p>
+
     </div>
 
-    <!-- LADO DERECHO -->
-    <div class="dev-semana">
-      <div class="dev-card">
-        <img src="devocionales/gracia.png" alt="Devocional de la semana">
-        <h5>Devocional de la semana</h5>
-        <p></p>
-        <a href="la-gracia.html" class="btn btn-main btn-sm">Leer devocional</a>
+    <!-- DEVOCIONAL SEMANA -->
+    <div class="featured-card">
+
+      <div class="featured-image">
+        <img src="devocionales/gracia.png" alt="">
       </div>
+
+      <div class="featured-info">
+
+        <span class="featured-label">
+          Devocional de la semana
+        </span>
+
+        <h3>La Gracia</h3>
+
+        <p>
+          Una experiencia devocional sobre la gracia que transforma,
+          sostiene y perfecciona.
+        </p>
+
+        <a href="la-gracia.html" class="btn-main">
+          Leer Devocional
+        </a>
+
+      </div>
+
     </div>
 
   </div>
-</header>
-<!-- LIBRERÍA -->
 
-<section class="section">
+</header>
+
+<!-- ================= CATEGORIAS ================= -->
+<section class="dev-library">
+
   <div class="container">
 
     <!-- ================= DOCTRINA ================= -->
     <div class="dev-section">
-      <h3 class="dev-section-title"> Devocionales de Doctrina</h3>
 
-      <div class="slider-container">
+      <div class="section-head">
+        <h2>Devocionales de Doctrina</h2>
+      </div>
+
+      <div class="slider-wrapper">
+
         <button class="slider-btn prev">‹</button>
 
         <div class="slider-track">
+
+          <!-- CARD -->
           <div class="dev-card">
             <img src="devocionales/gracia.png">
             <h5>La Gracia</h5>
-            <p>Fundamentos de la fe cristiana.</p>
-            <a href="la-gracia.html" class="btn btn-main btn-sm">Leer</a>
-          </div>
-
-          <div class="dev-card">
-            <img src="devocionales/redención.png">
-            <h5>La Salvación</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
+            <p>La obra divina que transforma la vida.</p>
+            <a href="la-gracia.html">Leer</a>
           </div>
 
           <div class="dev-card">
             <img src="devocionales/fe.png">
             <h5>La Fe</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
+            <p>Creer más allá de lo visible.</p>
+            <a href="#">Leer</a>
           </div>
 
-          
           <div class="dev-card">
-            <img src="devocionales/redención.png">
+            <img src="devocionales/redención.png">
             <h5>La Redención</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
-          </div>
-
-          
-          <div class="dev-card">
-            <img src="devocionales/El-Nombre.png">
-            <h5>El Nombre/h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
+            <p>El precio del amor eterno.</p>
+            <a href="#">Leer</a>
           </div>
 
           <div class="dev-card">
             <img src="devocionales/bautismo.png">
-            <h5>El Bautismo</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
+            <h5>Bautismo</h5>
+            <p>Una nueva vida en Cristo.</p>
+            <a href="#">Leer</a>
           </div>
 
-
-           <div class="dev-card">
+          <div class="dev-card">
             <img src="devocionales/Espiritu-santo.png">
-            <h5>El Espíritu Santo</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
+            <h5>Espíritu Santo</h5>
+            <p>Dios obrando dentro de ti.</p>
+            <a href="#">Leer</a>
           </div>
-
-          <div class="dev-card">
-            <img src="devocionales/redención.png">
-            <h5>La Justificación</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
-          </div>
-          
-          <div class="dev-card">
-            <img src="devocionales/redención.png">
-            <h5>El Arrepentimiento</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
-          </div>
-
-          <div class="dev-card">
-            <img src="devocionales/redención.png">
-            <h5>La Conversión</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
-          </div>
-
 
         </div>
 
-
         <button class="slider-btn next">›</button>
+
       </div>
+
     </div>
 
     <!-- ================= EMOCIONES ================= -->
     <div class="dev-section">
-  <h3 class="dev-section-title"> Devocionales sobre las Emociones</h3>
 
-  <div class="slider-container">
+      <div class="section-head">
+        <h2>Devocionales sobre Emociones</h2>
+      </div>
 
-    <button class="slider-btn prev">‹</button>
+      <div class="slider-wrapper">
 
-    <!-- TRACK ÚNICO -->
-    <div class="slider-track">
-
-        <div class="slider-track">
-          <div class="dev-card">
-            <img src="devocionales/gracia.png">
-            <h5>La Gracia</h5>
-            <p>Fundamentos de la fe cristiana.</p>
-            <a href="gracia.html" class="btn btn-main btn-sm">Leer</a>
-          </div>
-
-          <div class="dev-card">
-            <img src="devocionales/redención.png">
-            <h5>La Salvación</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
-          </div>
-
-          <div class="dev-card">
-            <img src="devocionales/fe.png">
-            <h5>La Fe</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
-          </div>
-
-          
-          <div class="dev-card">
-            <img src="devocionales/redención.png">
-            <h5>La Redención</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
-          </div>
-
-          
-          <div class="dev-card">
-            <img src="devocionales/El-Nombre.png">
-            <h5>El Nombre/h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
-          </div>
-
-          <div class="dev-card">
-            <img src="devocionales/bautismo.png">
-            <h5>El Bautismo</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
-          </div>
-
-
-           <div class="dev-card">
-            <img src="devocionales/Espiritu-santo.png">
-            <h5>El Espíritu Santo</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
-          </div>
-
-          <div class="dev-card">
-            <img src="devocionales/redención.png">
-            <h5>La Justificación</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
-          </div>
-          
-          <div class="dev-card">
-            <img src="devocionales/redención.png">
-            <h5>El Arrepentimiento</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
-          </div>
-
-          <div class="dev-card">
-            <img src="devocionales/redención.png">
-            <h5>La Conversión</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
-          </div>
-
-    </div>
-
-    <button class="slider-btn next">›</button>
-
-  </div>
-</div>
-
-    <!-- ================= IDENTIDAD ================= -->
-    <div class="dev-section">
-      <h3 class="dev-section-title"> Devocionales de Identidad</h3>
-
-      <div class="slider-container">
         <button class="slider-btn prev">‹</button>
 
         <div class="slider-track">
 
-                  <div class="slider-track">
           <div class="dev-card">
             <img src="devocionales/gracia.png">
-            <h5>La Gracia</h5>
-            <p>Fundamentos de la fe cristiana.</p>
-            <a href="gracia.html" class="btn btn-main btn-sm">Leer</a>
+            <h5>Ansiedad</h5>
+            <p>Descansar en medio del caos.</p>
+            <a href="#">Leer</a>
           </div>
 
           <div class="dev-card">
-            <img src="devocionales/redención.png">
-            <h5>La Salvación</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
+            <img src="devocionales/redención.png">
+            <h5>Soledad</h5>
+            <p>Dios sigue presente.</p>
+            <a href="#">Leer</a>
           </div>
 
           <div class="dev-card">
             <img src="devocionales/fe.png">
-            <h5>La Fe</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
-          </div>
-
-          
-          <div class="dev-card">
-            <img src="devocionales/redención.png">
-            <h5>La Redención</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
-          </div>
-
-          
-          <div class="dev-card">
-            <img src="devocionales/El-Nombre.png">
-            <h5>El Nombre/h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
-          </div>
-
-          <div class="dev-card">
-            <img src="devocionales/bautismo.png">
-            <h5>El Bautismo</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
-          </div>
-
-
-           <div class="dev-card">
-            <img src="devocionales/Espiritu-santo.png">
-            <h5>El Espíritu Santo</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
-          </div>
-
-          <div class="dev-card">
-            <img src="devocionales/redención.png">
-            <h5>La Justificación</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
-          </div>
-          
-          <div class="dev-card">
-            <img src="devocionales/redención.png">
-            <h5>El Arrepentimiento</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
-          </div>
-
-          <div class="dev-card">
-            <img src="devocionales/redención.png">
-            <h5>La Conversión</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
+            <h5>Temor</h5>
+            <p>Aprender a confiar.</p>
+            <a href="#">Leer</a>
           </div>
 
         </div>
 
         <button class="slider-btn next">›</button>
+
       </div>
+
+    </div>
+
+    <!-- ================= IDENTIDAD ================= -->
+    <div class="dev-section">
+
+      <div class="section-head">
+        <h2>Devocionales de Identidad</h2>
+      </div>
+
+      <div class="slider-wrapper">
+
+        <button class="slider-btn prev">‹</button>
+
+        <div class="slider-track">
+
+          <div class="dev-card">
+            <img src="devocionales/gracia.png">
+            <h5>Hijo de Dios</h5>
+            <p>Tu identidad en Cristo.</p>
+            <a href="#">Leer</a>
+          </div>
+
+          <div class="dev-card">
+            <img src="devocionales/redención.png">
+            <h5>Propósito</h5>
+            <p>Fuiste diseñado con intención.</p>
+            <a href="#">Leer</a>
+          </div>
+
+          <div class="dev-card">
+            <img src="devocionales/fe.png">
+            <h5>Valor</h5>
+            <p>Lo que Dios dice de ti.</p>
+            <a href="#">Leer</a>
+          </div>
+
+        </div>
+
+        <button class="slider-btn next">›</button>
+
+      </div>
+
     </div>
 
     <!-- ================= OTROS ================= -->
     <div class="dev-section">
-      <h3 class="dev-section-title">📚 Otros Devocionales</h3>
 
-      <div class="slider-container">
+      <div class="section-head">
+        <h2>Otros Devocionales</h2>
+      </div>
+
+      <div class="slider-wrapper">
+
         <button class="slider-btn prev">‹</button>
 
         <div class="slider-track">
 
-        <div class="slider-track">
           <div class="dev-card">
             <img src="devocionales/gracia.png">
-            <h5>La Gracia</h5>
-            <p>Fundamentos de la fe cristiana.</p>
-            <a href="gracia.html" class="btn btn-main btn-sm">Leer</a>
+            <h5>Sabiduría</h5>
+            <p>Aprender a caminar con Dios.</p>
+            <a href="#">Leer</a>
           </div>
 
           <div class="dev-card">
-            <img src="devocionales/redención.png">
-            <h5>La Salvación</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
+            <img src="devocionales/redención.png">
+            <h5>Familia</h5>
+            <p>Construyendo relaciones sanas.</p>
+            <a href="#">Leer</a>
           </div>
 
           <div class="dev-card">
             <img src="devocionales/fe.png">
-            <h5>La Fe</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
-          </div>
-
-          
-          <div class="dev-card">
-            <img src="devocionales/redención.png">
-            <h5>La Redención</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
-          </div>
-
-          
-          <div class="dev-card">
-            <img src="devocionales/El-Nombre.png">
-            <h5>El Nombre/h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
-          </div>
-
-          <div class="dev-card">
-            <img src="devocionales/bautismo.png">
-            <h5>El Bautismo</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
-          </div>
-
-
-           <div class="dev-card">
-            <img src="devocionales/Espiritu-santo.png">
-            <h5>El Espíritu Santo</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
-          </div>
-
-          <div class="dev-card">
-            <img src="devocionales/redención.png">
-            <h5>La Justificación</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
-          </div>
-          
-          <div class="dev-card">
-            <img src="devocionales/redención.png">
-            <h5>El Arrepentimiento</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
-          </div>
-
-          <div class="dev-card">
-            <img src="devocionales/redención.png">
-            <h5>La Conversión</h5>
-            <p>Una verdad eterna.</p>
-            <a href="salvacion.html" class="btn btn-main btn-sm">Leer</a>
+            <h5>Oración</h5>
+            <p>Hablar con Dios diariamente.</p>
+            <a href="#">Leer</a>
           </div>
 
         </div>
 
         <button class="slider-btn next">›</button>
+
       </div>
+
     </div>
 
   </div>
+
 </section>
 
-<!-- FOOTER (MISMO) -->
+<!-- ================= FOOTER ================= -->
 <footer class="footer">
-  <div class="container text-center">
-    <p>© 2026 Piensa en esto | Pahola Perez</p>
+  <div class="container">
+
+    <p class="footer-copy">
+      © 2026 Piensa en esto | Pahola Perez
+    </p>
+
+    <div class="footer-social">
+
+      <a href="https://www.facebook.com/profile.php?id=100063902685089" class="social-icon">
+        <i class="bi bi-facebook"></i>
+      </a>
+
+      <a href="https://www.instagram.com/viaa_48/" class="social-icon">
+        <i class="bi bi-instagram"></i>
+      </a>
+
+      <a href="https://www.youtube.com/channel/UCqcQNloeED-9Z5LDlIiYOlQ" class="social-icon">
+        <i class="bi bi-youtube"></i>
+      </a>
+
+      <a href="https://open.spotify.com/user/31tfxk6ls3qm7tm7y2n66ro7zft4" class="social-icon">
+        <i class="bi bi-spotify"></i>
+      </a>
+
+    </div>
+
   </div>
 </footer>
 
-<script src="../js/main.js"></script>
+<!-- ================= JS ================= -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="devocionales.js"></script>
+
 </body>
 </html>
